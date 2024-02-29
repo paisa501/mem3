@@ -20,7 +20,7 @@
       grid-template-columns: repeat(4, 85px); /* Reducir el ancho de las cartas */
       grid-template-rows: repeat(4, 85px); /* Reducir el alto de las cartas */
       grid-gap: 5px; /* Reducir el espacio entre cartas */
-      border: 15px solid #00aae4; /* Borde delgado */
+      border: 10px solid #87CEEB; /* Borde delgado */
       padding: 5px; /* Espaciado interno */
       background-color: rgba(255, 255, 255, 0.5); /* Fondo blanco semi-transparente para mejor legibilidad */
     }
@@ -110,8 +110,8 @@
       z-index: 9999; /* Asegura que esté por encima de otros elementos */
     }
     #overlay img {
-      max-width: 80%;
-      max-height: 80%;
+      max-width: 90%; /* Reducir la anchura máxima de la imagen */
+      max-height: 70%; /* Reducir la altura máxima de la imagen */
     }
     #continueButton {
       margin-top: 10px; /* Reducir el margen superior */
@@ -144,7 +144,7 @@
 <body>
   <button id="memoramaButton">Memorama Intel</button>
   <div id="overlay" style="display: none;">
-    <img src="specs.jpg" alt="Imagen de inicio" style="width: 90%; height: 90%;"> <!-- Agrandar la imagen -->
+    <img src="specs.jpg" alt="Imagen de inicio"> <!-- Reducir el tamaño de la imagen -->
     <button id="continueButton">Continuar</button>
   </div>
   <button id="startButton" style="display: none;">Iniciar Juego</button>
